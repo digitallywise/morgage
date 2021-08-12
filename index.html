@@ -6,16 +6,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" media="screen" />
+    <link rel="stylesheet" href="./css/print.css" media="print" />
   </head>
   <body>
-      <header>
+    <header class="header">
+      <div class="logo">mortgage borrowing and deposit calculator</div>
+      <nav>
+        <ul>
+          <li class="active">
+            <a href="index.html" title="How much you can borrow?">
+              Calculate borrowing required</a
+            >
+          </li>
+          <li>
+            <a href="deposit.html" title="How much you can depost?">
+              Calculate depost require?</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="blurb">
+        <h1>Find out How much you can borrow?</h1>
+        <p class="paragraph">
+          Get a quick quote for how much you could borrow for a property you’ll
+          live in, based on your financial situation. If you want a more
+          accurate quote, use our affordability calculator. You’ll need to spend
+          a little longer on this.
+        </p>
+      </section>
 
-      </header>
-      <main>
+      <section class="form">
+        <p class="paragraph">* (Required fields)</p>
+        <form onsubmit="return onSubmitMortgageForm(this)">
+          <fieldset>
+            <legend class="legend">How much can I borrow?</legend>
+            <div class="input-row">
+              <p>How many applicants? *</p>
+              <input
+                type="radio"
+                id="applicants1"
+                name="applicants"
+                value="1"
+                checked
+                required
+              />
+              <label for="applicants1">One</label>
+              <input
+                type="radio"
+                id="applicants2"
+                name="applicants"
+                value="2"
+                required
+              />
+              <label for="applicants2">Two</label>
+            </div>
 
-      </main>
-      <footer>
+            <div class="input-row input-row-block" id="income1-wrapper">
+              <label for="income1-input">My Income: *</label>
+              <input
+                id="income1-input"
+                type="number"
+                class="input"
+                value=""
+                name="income1"
+                placeholder="£"
+                required
+              />
 
-      </footer>
+              <select name="income1duration">
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+              </select>
+            </div>
+
+            <div class="input-row input-row-block" id="income2-wrapper">
+              <label for="income2-input">Applicant Two Income * </label>
+              <input
+                type="number"
+                id="income2-input"
+                class="input"
+                value=""
+                name="income2"
+                placeholder="£"
+              />
+              <select name="income2duration">
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+              </select>
+            </div>
+
+            <div class="input-row input-row-block" id="expenditure-wrapper">
+              <label for="expenditure-input">Total Expenditure *</label>
+              <input
+                id="expenditure-input"
+                type="number"
+                class="input"
+                value=""
+                name="expenditure"
+                placeholder="£"
+                required
+              />
+              <select name="expenditureduration">
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+              </select>
+            </div>
+
+            <div class="input-row input-row-block" id="deposit-wrapper">
+              <label for="deposit">Deposit *</label>
+              <input
+                id="deposit"
+                type="number"
+                class="input"
+                value=""
+                name="deposit"
+                placeholder="£"
+                required
+              />
+            </div>
+            <input type="submit" value="Calculate" name="submit" />
+            <input type="reset" value="Clear" name="clear" />
+          </fieldset>
+        </form>
+      </section>
+      <section class="result">
+        <h2>
+          The deposit you need for a home with this value is:
+          <strong id="result"></strong>
+        </h2>
+      </section>
+    </main>
+    <footer>
+      <h2>This is the footer area</h2>
+    </footer>
+    <script src="./js/borrowing.js"></script>
   </body>
 </html>

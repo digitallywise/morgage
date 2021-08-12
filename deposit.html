@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Deposit calculator</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" media="screen" />
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">mortgage borrowing and deposit calculator</div>
+      <div class="nav">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" title="How much you can borrow?">
+                Calculate borrowing required</a
+              >
+            </li>
+            <li class="active">
+              <a href="deposit.html" title="How much you can depost?">
+                Calculate depost require?</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="blurb">
+        <h1>How much Deposit do I need?</h1>
+        <p class="paragraph">
+          Calculate instantly how much deposit you need towards your mortgage by
+          completing the form below.
+        </p>
+      </section>
+
+      <section class="form">
+        <form onsubmit="return onSubmitDepositForm(this)">
+          <fieldset>
+            <legend class="legend">How much deposit do I need?</legend>
+            <div class="input-row">
+              <p>Reason for buying*</p>
+              <select name="reason" required>
+                <option value="" selected>Please select</option>
+                <option value="first">First Time Buyer</option>
+                <option value="second">Second home Buyer</option>
+              </select>
+            </div>
+            <div class="input-row input-row-block">
+              <label for="price">Deposit % </label>
+              <input
+                type="number"
+                class="input"
+                id="deposit"
+                name="deposit"
+                placeholder="%"
+                value=""
+                required
+              />
+            </div>
+
+            <div class="input-row input-row-block">
+              <label for="price">Price of the property you want to buy* </label>
+              <input
+                type="number"
+                class="input"
+                id="price"
+                name="price"
+                placeholder="£"
+                required
+              />
+            </div>
+
+            <input type="submit" value="Calculate" name="submit" />
+            <input type="reset" value="Clear" name="clear" />
+          </fieldset>
+        </form>
+      </section>
+      <section class="result">
+        <h2>
+          The deposit you need for a home with this value is:
+          <strong id="result"></strong>
+        </h2>
+      </section>
+    </main>
+
+    <footer>
+      <h3>mortgage borrowing calculator</h3>
+    </footer>
+    <script src="./js/deposit.js"></script>
+  </body>
+</html>
