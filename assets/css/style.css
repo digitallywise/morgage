@@ -7,215 +7,237 @@ body {
     font-weight: 100;
     font-style: normal;
     line-height: 1.8;
-  }
-  
-  ul {
+}
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  li {
+}
+
+li {
     display: inline;
     border-right: white;
-  }
-  
-  fieldset {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+fieldset {
     border-radius: 6px;
-  }
-  
-  input.input {
+}
+
+input.input {
     padding: 14px 20px;
     border: 1px solid rgb(97, 4, 117);
     font-size: 22px;
-  }
-  
-  input[type="submit"] {
+}
+
+input[type="submit"] {
     background-color: rgb(97, 4, 117);
     color: #fff;
     padding: 14px 30px;
     font-size: 22px;
     border: none;
     border-radius: 15px;
-  }
-  
-  input[type="reset"] {
+}
+
+input[type="reset"] {
     background-color: rgb(187, 121, 202);
     color: #fff;
     padding: 14px 30px;
     font-size: 22px;
     border: none;
     border-radius: 15px;
-  }
-  
-  select {
+}
+
+select {
     height: 56px;
     line-height: 40px;
     padding: 0 20px;
     font-size: 22px;
-  }
-  
-  .header {
+}
+
+.header {
     background-color: rgb(97, 4, 117);
-    font-size: 1.5rem;
     margin-bottom: 0%;
-  }
-  
-  .logo {
+}
+/*
+.logo {
     color: white;
     font-size: 2rem;
     text-transform: uppercase;
     padding: 2rem;
     text-align: center;
-  }
-  
-  h1 {
-    color: purple;
+}*/
+
+h1 {
+    color: white;
     font-size: 2rem;
     text-transform: uppercase;
-    padding-left: 1rem;
-    padding-top: 1rem;
-  }
-  
-  h2 {
-    font-size: 1.2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.6rem;
     color: rgb(97, 4, 117);
+    text-transform: uppercase;
     padding: 1rem;
-  }
-  
-  a {
+}
+
+a {
     color: #200;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: rgb(97, 4, 117);
     text-decoration: underline;
-  }
-  
-  nav {
+}
+
+nav {
     background-color: rgb(238, 188, 238);
     padding: 1.7rem;
     font-size: 1.4rem;
     color: purple;
     display: block;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  
-  nav li.active a {
+}
+
+nav li.active a {
     text-decoration: underline;
     color: maroon;
-  }
-  
-  nav ul a {
+}
+
+nav ul a {
     text-transform: uppercase;
-  }
-  
-  .blurb {
+}
+
+.blurb {
     margin: 1rem auto;
     width: 50%;
-  }
-  
-  .paragraph {
+}
+
+.paragraph {
     color: rgb(97, 4, 117);
     font-size: 1.2rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-  }
-  
-  #income2-wrapper {
+}
+
+#income2-wrapper {
     display: none;
-  }
-  
-  .input-row {
+}
+
+.input-row {
     margin-bottom: 2rem;
     display: block;
-  }
-  
-  .input-row label,
-  .form p {
+}
+
+.input-row label,
+.form p {
     font-size: 22px;
-  }
-  
-  .input-row-block label {
+}
+
+.input-row-block label {
     display: block;
     margin-bottom: 10px;
-  }
-  
-  .legend {
+}
+
+.legend {
     font-size: 1.5rem;
     font-weight: 600;
     color: rgb(97, 4, 117);
     margin-left: 20px;
-  }
-  
-  .form {
+}
+
+.form {
     margin: 1rem auto;
     width: 50%;
     display: block;
-  }
-  
-  .result {
+}
+
+.result {
     margin: 1rem auto;
     width: 50%;
     min-height: 100px;
     background-color: rgb(181, 253, 122);
     border: 1px solid rgb(181, 253, 122);
     border-radius: 6px;
-  }
-  
-  .form fieldset {
+}
+
+.form fieldset {
     background-color: rgb(253, 245, 255);
-  }
-  
-  .form input[type="submit"] {
+}
+
+.form input[type="submit"] {
     margin-bottom: 10px;
-  }
-  
-  .form input[type="reset"] {
+}
+
+.form input[type="reset"] {
     float: right;
-  }
-  
-  /* Mobile styling */
-  
-  @media only screen and (max-width: 767px) {
+}
+
+footer {
+    background-color: rgb(97, 4, 117);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer {
+    color: #fff;
+   text-align: center;
+}
+
+.footer h2 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+}
+
+/* Mobile styling */
+
+@media only screen and (max-width: 768px) {
     main {
-      padding-left: 10px;
-      padding-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    .logo {
-      font-size: 1.6rem;
-    }
+
+h1 {
+    font-size: 1.4rem;
+}
+
     nav ul {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     nav ul li {
-      margin-bottom: 10px;
+        margin-bottom: 10px;
     }
+
     nav ul li a {
-      font-size: 16px;
+        font-size: 19px;
     }
-  
+
     .blurb {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .form {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .form input.input {
-      max-width: 40%;
+        max-width: 40%;
     }
-  
+
     .result {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
+}
