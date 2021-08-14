@@ -61,6 +61,7 @@ select {
     background-color: rgb(97, 4, 117);
     margin-bottom: 0%;
 }
+
 /*
 .logo {
     color: white;
@@ -97,7 +98,7 @@ a:hover {
 
 nav {
     background-color: rgb(238, 188, 238);
-    padding: 1.7rem;
+    padding: 0.7rem;
     font-size: 1.4rem;
     color: purple;
     display: block;
@@ -192,7 +193,8 @@ footer {
 
 .footer {
     color: #fff;
-   text-align: center;
+    text-align: center;
+    padding: 10px;
 }
 
 .footer h2 {
@@ -209,9 +211,9 @@ footer {
         padding-right: 10px;
     }
 
-h1 {
-    font-size: 1.4rem;
-}
+    h1 {
+        font-size: 1.4rem;
+    }
 
     nav ul {
         flex-direction: column;
