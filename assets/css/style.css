@@ -1,7 +1,8 @@
 /* Generic Styling */
-*, html {
-    margin:0;
-    padding:0;  
+*,
+html {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -213,7 +214,6 @@ footer {
     main {
         padding-left: 10px;
         padding-right: 10px;
-        margin-top: 0%;
     }
 
     h1 {
@@ -245,6 +245,10 @@ footer {
     }
 
     .result {
+        width: 100%;
+    }
+
+    .footer {
         width: 100%;
     }
 }
