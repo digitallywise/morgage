@@ -9,6 +9,12 @@ body {
     line-height: 1.8;
 }
 
+margin-zero {
+margin-top: 0%;
+margin-bottom: 0%;
+
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -59,8 +65,6 @@ select {
 
 .header {
     background-color: rgb(97, 4, 117);
-    margin-bottom: 0%;
-    margin-top: 0%;
 }
 
 
