@@ -51,15 +51,15 @@ function onSubmitMortgageForm() {
   return false;
 }
 
-
+if (applicants1Element) {
   applicants1Element.addEventListener("click", function () {
     document.getElementsByName("income2")[0].value = "";
     application2Wrapper.style.display = "none";
   });
+}
 
-
+if (applicants2Element) {
   applicants2Element.addEventListener("click", function () {
-    console.log("helo")
     application2Wrapper.style.display = "block";
   });
-
+}
