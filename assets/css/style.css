@@ -211,7 +211,7 @@ footer {
 
 /* Mobile styling */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 280px){
     
   header {
     width: 100%;
@@ -226,8 +226,12 @@ footer {
     }
 
     h1 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         margin: 0%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
     }
 
     nav ul {
@@ -239,7 +243,7 @@ footer {
     }
 
     nav ul li a {
-        font-size: 19px;
+        font-size: 17px;
     }
     nav {
       width: 100%;
