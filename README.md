@@ -100,5 +100,5 @@ https://www.barclays.co.uk/mortgages/mortgage-calculator/borrowing-calculator/#/
 
 I would like to thank my wife who sacrificed a lot to support me complete this project and for her ongoing support. I would also like to thank my little ones for still giving me smile when I go home in the evening.  My mentor Felipe Souza Alarcon has been extremely helpful especially at the project inception stage which i find was the foundation of all the work that i did afterwards. Thank you Felipe for your kind support.  I would also like to thank all the student care, tutors and the whole team at the code institute for all the help they have provided me. 
 
-Finally I would like to thank and acknowledge the platforms that provided me the resources used to allow me complete this project:
+Finally I would like to thank and acknowledge the platforms that provided me the resources used to allow me complete this project.
 
